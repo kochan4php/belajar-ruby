@@ -15,21 +15,21 @@
   end
 =end
 
-# def isAlpha(char)
-#   ascii = char.ord() # => convert char to ASCII code
-#   return ((65..90).include?(ascii) || (97..122).include?(ascii))
-# end
+def isAlpha(char)
+  ascii = char.ord() # => convert char to ASCII code
+  return ((65..90).include?(ascii) || (97..122).include?(ascii))
+end
 
-# if $0 == __FILE__
-#   puts "Masukkan huruf: "
-#   char = $stdin.getc()
+if $0 == __FILE__
+  puts "Masukkan huruf: "
+  char = $stdin.getc()
 
-#   if isAlpha(char)
-#     puts "Anda memasukkan huruf #{char}"
-#   else
-#     puts "Karakter #{char} bukan merupakan huruf"
-#   end
-# end
+  if isAlpha(char)
+    puts "Anda memasukkan huruf #{char}"
+  else
+    puts "Karakter #{char} bukan merupakan huruf"
+  end
+end
 
 # * if...elsif...else
 =begin
@@ -50,29 +50,31 @@
   end
 =end
 
-# puts "Masukkan nilai UTS: "
-# nilaiUts = gets.to_f
-# puts "Masukkan nilai UAS: "
-# nilaiUas = gets.to_f
+if $0 == __FILE__
+  puts "Masukkan nilai UTS: "
+  nilaiUts = gets.to_f
+  puts "Masukkan nilai UAS: "
+  nilaiUas = gets.to_f
 
-# totalNilai = (0.4 * nilaiUts) + (0.6 * nilaiUas)
+  totalNilai = (0.4 * nilaiUts) + (0.6 * nilaiUas)
 
-# if totalNilai >= 90
-#   index = "A"
-# elsif totalNilai >= 80
-#   index = "B"
-# elsif totalNilai >= 70
-#   index = "C"
-# elsif totalNilai >= 60
-#   index = "D"
-# else
-#   index = "E"
-# end
+  if totalNilai >= 90
+    index = "A"
+  elsif totalNilai >= 80
+    index = "B"
+  elsif totalNilai >= 70
+    index = "C"
+  elsif totalNilai >= 60
+    index = "D"
+  else
+    index = "E"
+  end
 
-# puts "\n"
+  puts "\n"
 
-# puts "Nilai Akhir \t: #{totalNilai}"
-# puts "Nilai Index \t: #{index}"
+  puts "Nilai Akhir \t: #{totalNilai}"
+  puts "Nilai Index \t: #{index}"
+end
 
 # * unless
 =begin
@@ -89,14 +91,14 @@
   end
 =end
 
-# puts "Masukkan angka: "
-# a = gets.to_i
+puts "Masukkan angka: "
+a = gets.to_i
 
-# unless a % 2 != 0
-#   puts "#{a} adalah bilangan genap"
-# else
-#   puts "#{a} adalah bilangan ganjil"
-# end
+unless a % 2 != 0
+  puts "#{a} adalah bilangan genap"
+else
+  puts "#{a} adalah bilangan ganjil"
+end
 
 # * case
 =begin
