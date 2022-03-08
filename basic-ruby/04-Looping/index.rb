@@ -261,3 +261,129 @@ puts "\n"
 10.step(1, -2) do |index|
   puts "#{index}. step menurun nih"
 end
+
+# Melakukan pengulangan pada koleksi (array & hash)
+# * each()
+=begin
+  namaArray.each() { |elemen| aksi }
+
+  or
+
+  namaArray.each() do |elemen|
+    aksi
+  end
+=end
+
+mhs = ["Deo Subarno", "Inuyama Aoi", "Tsumugi Kotobuki"]
+mhs.each() do |m|
+  puts m
+end
+
+=begin
+  namaHash.each() { |key, value| aksi }
+
+  or
+
+  namaHash.each() do |key, value|
+    aksi
+  end
+=end
+
+mahasiswa = {
+  :nama => "Inuyama Aoi",
+  :email => "aoichan@gmail.com", 
+  :nohp => "08988928260",
+  :jurusan => "Teknik Informatika"
+}
+
+mahasiswa.each() do |key, value|
+  puts "#{key}: #{value}"
+end
+
+# * each_index()
+# sama seperti each, namun each_index() hanya akan mengambil indexnya saja
+=begin
+  namaArray.each_index() { | index | aksi }
+
+  or
+
+  namaArray.each_index() do | index |
+    aksi
+  end
+=end
+
+data = [100, 200, 300, 400, 500]
+
+data.each_index() do |index|
+  puts index
+end
+
+# * collect()
+# method yang dimiliki class Array yang berfungsi membuat array baru berdasarkan perhitungan tertentu terhadap element array
+=begin
+  namaArray.collect() { |element| perhitungan }
+
+  or 
+
+  namaArray.collect() do |element|
+    perhitungan
+  end
+=end 
+
+# example
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+bilanganBelasan = numbers.collect() do |number|
+  number + 10
+end
+
+numbers2 = [1, 3, 5, 7, 9]
+kuadrat = numbers2.collect() do |number|
+  number ** 2
+end
+
+puts "Bilangan Genap: #{bilanganBelasan}\t"
+puts "Bilangan kuadrat: #{kuadrat}\t"
+
+# * select()
+# method yang dimiliki class Array yang berfungsi membuat array baru berdasarkan kriteria kriteria tertentu
+=begin
+  namaArray.select() { |element| kriteria }
+
+  or 
+
+  namaArray.select() do |element|
+    kriteria
+  end
+=end 
+
+numbers3 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+bilanganGanjil = numbers3.select() do |number|
+  number % 2 == 1
+end
+
+bilanganGenap = numbers3.select() { |number| number % 2 == 0 }
+
+puts "Bilangan ganjil : #{bilanganGanjil}\t"
+puts "Bilangan genap : #{bilanganGenap}\t"
+
+# * reject()
+# method yang dimiliki class Array yang punya fungsi berbanding terbalik dengan method select(), yaitu membuang elemen array berdasarkan kriteria tertentu dan membuat array baru
+=begin
+  namaArray.reject() { |element| kriteria }
+
+  or 
+
+  namaArray.reject() do |element|
+    kriteria
+  end
+=end 
+
+numbers4 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+bilanganGenap2 = numbers4.reject() do |number|
+  number % 2 == 1
+end
+
+bilanganGanjil2 = numbers4.reject() { |number| number % 2 == 0}
+
+puts "Bilangan genap method reject() : #{bilanganGenap2}\t"
+puts "Bilangan ganjil method reject() : #{bilanganGanjil2}\t"
