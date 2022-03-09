@@ -39,12 +39,12 @@ hasilKurang = pengurangan(num1, num2)
 hasilKali = perkalian(num1, num2)
 hasilBagi = pembagian(num1, num2)
 
-# puts "#{num1} + #{num2} = #{hasilJumlah}"
-# puts "#{num1} - #{num2} = #{hasilKurang}"
-# puts "#{num1} x #{num2} = #{hasilKali}"
-# puts "#{num1} / #{num2} = #{hasilBagi}"
+puts "#{num1} + #{num2} = #{hasilJumlah}"
+puts "#{num1} - #{num2} = #{hasilKurang}"
+puts "#{num1} x #{num2} = #{hasilKali}"
+puts "#{num1} / #{num2} = #{hasilBagi}"
 
-# puts "\n"
+puts "\n"
 
 # Method / Function tanpa return nilai
 def clearTerminalScreen()
@@ -77,9 +77,9 @@ def method_2()
 end
 
 if $0 == __FILE__
-  # method_1()
-  # puts "\n"
-  # method_2()
+  method_1()
+  puts "\n"
+  method_2()
 end
 
 # Optional Parameter
@@ -95,9 +95,9 @@ def cetakKeLayar(value, newLine = false)
   end
 end
 
-# cetakKeLayar("Belajar Ruby")
-# cetakKeLayar("Belajar Javascript", true)
-# cetakKeLayar("Belajar Algoritma dan data struktur")
+cetakKeLayar("Belajar Ruby")
+cetakKeLayar("Belajar Javascript", true)
+cetakKeLayar("Belajar Algoritma dan data struktur")
 
 # Memanggil method dengan urutan argumen yang berbeda
 =begin
@@ -124,7 +124,7 @@ def echo(a:, b:, c:)
   puts "Param c = #{c}"
 end
 
-# echo(c: 300, a: 100, b: 200)
+echo(c: 300, a: 100, b: 200)
 
 # Memanggil method dengan jumlah argumen berbeda
 =begin
@@ -138,11 +138,11 @@ def exampleMethod(*args)
   puts "\n"
 end
 
-# exampleMethod(100)
-# exampleMethod(100, 200)
-# exampleMethod(100, 200, 300)
-# exampleMethod(100, 200, 300, 400)
-# exampleMethod(100, 200, 300, 400, 500)
+exampleMethod(100)
+exampleMethod(100, 200)
+exampleMethod(100, 200, 300)
+exampleMethod(100, 200, 300, 400)
+exampleMethod(100, 200, 300, 400, 500)
 
 =begin
   * method yang mendefinisikan parameter *args masih dapat memiliki parameter normal
@@ -154,7 +154,7 @@ def exampleMethod1(a, *args)
   puts "Parameter *args: #{args}"
 end
 
-# exampleMethod1("Test", 100, 200, 300, 400, 500)
+exampleMethod1("Test", 100, 200, 300, 400, 500)
 
 # lambda
 =begin
@@ -164,3 +164,72 @@ end
 
 maksimum = lambda {|a, b| a > b ? a : b}
 puts maksimum.call(100, 30)
+
+# Mendefinisikan method didalam method
+def luasLingkaran2(r)
+  def kuadrat(x)
+    return x * x
+  end
+
+  return Math::PI * kuadrat(r)
+end
+
+puts luasLingkaran2(10)
+puts luasLingkaran2(20)
+
+=begin
+  * pada bahasa pemrograman lain, umumnya method kuadrat() hanya dapat dipanggil didalam lingkup method luasLingkaran2(). namun pada Ruby, kita tetap dapat memanggil method kuadrat() walaupun diluar method luasLingkaran2().
+=end
+
+puts kuadrat(10)
+puts kuadrat(20)
+
+# Membuat alias untuk method
+=begin
+  * suatu method yang sudah didefinisikan dengan nama tertentu dapat didefinisikan ulang menggunakan nama baru yang lebih sederhana.
+  * bentuk penggunaan : alias namaAlias namaMethod
+=end
+
+alias echo puts
+
+echo "Belajar Ruby Method menggunakan alias"
+
+# menghapus method
+=begin
+  * suatu method yang sudah didefinisikan dapat dihapus kembali menggunakan perintah undef
+  * bentuk penggunaan : undef namaMethod
+=end
+
+def sayHello()
+  puts "Hello"
+end
+
+sayHello() # Memanggil method sayHello()
+
+undef sayHello # Menghapus method sayHello()
+
+# sayHello() # Method sayHello() tidak dapat dipanggil lagi
+
+# method eval()
+=begin
+  * method eval() digunakan untuk menjalankan kode aritmatika yang didefinisikan dalam bentuk string
+  * method eval() ini banyak dimanfaatkan untuk pembuatan program yang melibatkan perhitungan dengan sumber data berupa string, misalnya kalkulator.
+=end
+
+ekspresiAritmatika = "2 + 2"
+
+hasil = eval(ekspresiAritmatika)
+
+puts "Hasil eval(ekspresiAritmatika) = #{hasil}"
+
+# method exec()
+=begin
+  * method exec() digunakan untuk mengeksekusi program ekternal dari dalam kode Ruby.
+=end
+  
+# Sebagai contoh, untuk menjalankan program kalkulator yang ada di sistem operasi kita, kita dapat menggunakan method exec() dengan menuliskan sebagai berikut :
+
+exec("calc.exe") # Menjalankan program kalkulator di windows
+
+# untuk menjalankan program REPL node.js jika suda terinstall di sistem kita, kita dapat menggunakan method exec() dengan menuliskan sebagai berikut :
+exec("node.exe") # Menjalankan REPL node.js di windows jika sudah terinstall
