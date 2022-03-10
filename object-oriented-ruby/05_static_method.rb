@@ -5,7 +5,7 @@
   # Untuk mengakses method statis, kita tidak perlu membuat instance object terlebih dahulu.
   # Kita dapat menggunakan operator (.) atau (::) untuk mengakses method statis.
   # Pemanggilan method statis dilakukan melalui nama class, dengan bentuk seperti berikut:
-    NamaClass::namaMethod() atau NamaClass.namaMethod()
+    NamaClass.namaMethod() atau NamaClass::namaMethod()
 =end
 
 class Segitiga
