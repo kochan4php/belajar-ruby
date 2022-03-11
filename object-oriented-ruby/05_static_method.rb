@@ -1,7 +1,7 @@
 =begin
   # Method statis adalah method yang dimiliki oleh Class, bukan dimiliki oleh objek dari class yang bersangkutan 
   # Selain untuk atribut statis, sifat statis juga dapat diterapkan untuk method.
-  # Method statis perlu didefinisikan menggunakan keyword self diikuti nama methodnya, contoh : self.namaMethod().
+  # Method statis perlu didefinisikan menggunakan keyword self diikuti nama methodnya, contoh : self.namaMethod() atau self::namaMethod().
   # Untuk mengakses method statis, kita tidak perlu membuat instance object terlebih dahulu.
   # Kita dapat menggunakan operator (.) atau (::) untuk mengakses method statis.
   # Pemanggilan method statis dilakukan melalui nama class, dengan bentuk seperti berikut:
