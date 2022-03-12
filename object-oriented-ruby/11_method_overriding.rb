@@ -1,5 +1,5 @@
 =begin
-  # Method Overriding adalah membuat sebuah method di child class yang memiliki nama yang sama dengan method di parent class
+  # Method Overriding adalah method di child class yang memiliki nama yang sama dengan method di parent class
   # Tujuannya ntuk melakukan fungsionalitas yang sama, dengan keadaan yang berbeda
   # Pada method overriding, jika ingin melakukan fungsionalitas yang sama dengan keadaan yang berbeda, kita bisa menggunakan keyword super.
   # Keyword super digunakan untuk mengakses method di parent class.
