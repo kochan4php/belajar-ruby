@@ -6,6 +6,5 @@
 Untuk menampilkan tulisan ke layar, gunakan `puts`
 
 ```ruby
-# Contoh
 puts "Hello World"
 ```
