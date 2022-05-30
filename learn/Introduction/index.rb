@@ -71,12 +71,28 @@ puts "\n#{total2}"
 
 # Blok inisialisasi adalah kode program yang akan dijalankan pertama kali ketika program ruby di jalankan.
 BEGIN {
-  puts "Aku dijalankan paling pertama"
+  puts "Aku dijalankan paling pertama\n"
 }
 
 # Blok finalisasi adalah kode program yang akan dijalankan terakhir ketika program ruby di jalankan.
 END {
-  puts "Aku dijalankan paling akhir"
+  puts "\nAku dijalankan paling akhir"
 }
 
 # Akhir blok inisialisasi dan finalisasi
+
+# Awal menampilkan output ke layar
+
+# Untuk menampilkan data ke layar kita bisa menggunakan method dibawah ini
+=begin 
+  1. puts
+  2. print()
+  3. printf()
+=end
+
+a = "Hai"
+puts a
+print(a)
+printf(a)
+
+# Akhir menampilkan output ke layar
