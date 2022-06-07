@@ -94,5 +94,50 @@ a = "Hai"
 puts a
 print(a)
 printf(a)
+puts "\n"
 
 # Akhir menampilkan output ke layar
+
+# Awal membaca data dari input terminal
+=begin 
+  1. Untuk membaca data yang di inputkan dari keyboard bisa menggunakan method gets(), dan otomatis method ini menambahkan baris baru
+  2. Untuk menghilangkan baris baru, method gets() harus disambung dengan method chomp() atau chop()
+=end
+
+print "Masukkan nama: "
+nama = gets().chomp()
+
+print "Masukkan umur: "
+umur = gets().to_i()
+
+puts "Hai nama saya #{nama}, saya berumur #{umur} tahun."
+
+print "Masukkan jumlah pengulangan: "
+number = gets().to_i()
+number.times do |index|
+  coma = ", "
+  if number == (index + 1)
+    coma = " "
+  end
+
+  print "#{index}#{coma}"
+end
+
+puts "\n"
+
+def perkalian(a, b)
+  return a * b
+end
+
+print "Masukkan bilangan pertama: "
+a = gets().to_i()
+print "Masukkan bilangan kedua: "
+b = gets().to_i()
+print "Pilih operasi matematika (x, /, +, -)"
+operasi = gets().chomp()
+
+if operasi == "x"
+  puts perkalian(a, b)
+end
+
+# Akhir membaca data dari input terminal
