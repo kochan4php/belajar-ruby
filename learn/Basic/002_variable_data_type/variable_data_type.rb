@@ -83,3 +83,41 @@ else
 end
 
 puts angkaMutlak
+
+=begin 
+  Instance Variable / Variabel milik objek
+  
+  Instace variable merupakan atribut yang didefinisikan di dalam class yang nantinya jika class yang bersangkutan diinstansiasi, maka instance variable tersebut akan menjadi milik object yang menginstansiasi class tersebut.
+
+  Instance variable didefinisikan dengan menggunakan tanda @ lalu nama atribut nya. Seperti contoh @nama_atribut = nilai. Instance variable ini bersifat private dan tidak bisa diakses diluar class.
+=end
+
+class Segitiga 
+  def initialize(alas = 0, tinggi = 0)
+    # Mendefinisikan atribut alas
+    @alas = alas
+
+    # Mendefinisikan atribut tinggi
+    @tinggi = tinggi
+  end
+
+  def cetakInstanceVariable()
+    puts "Instance variable / atribut dari object segitiga: "
+    puts "Alas: #{@alas}"
+    puts "Tinggi: #{@tinggi}"
+  end
+
+  private
+    def luas()
+      return @alas * @tinggi / 2
+    end
+
+  public
+    def cetakLuas()
+      puts "Total luas: #{luas()}"
+    end
+end
+
+segitiga1 = Segitiga.new(2, 4)
+segitiga1.cetakInstanceVariable()
+segitiga1.cetakLuas()
