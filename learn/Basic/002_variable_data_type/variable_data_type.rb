@@ -85,7 +85,7 @@ end
 puts angkaMutlak
 
 =begin 
-  Instance Variable / Variabel milik objek
+  ! Instance Variable / Variabel milik objek
   
   Instace variable merupakan atribut yang didefinisikan di dalam class yang nantinya jika class yang bersangkutan diinstansiasi, maka instance variable tersebut akan menjadi milik object yang menginstansiasi class tersebut.
 
@@ -121,3 +121,33 @@ end
 segitiga1 = Segitiga.new(2, 4)
 segitiga1.cetakInstanceVariable()
 segitiga1.cetakLuas()
+
+=begin 
+  ! Class Variable / Variable milik class
+
+  Class variable / Variable milik class merupakan atribut statis yang dimiliki oleh class. Berbeda dengan atribut non-statis / instance variable, atribut statis / class variable tidak dimiliki oleh setiap objek. Hanya terdapat satu variable yang nilainya dibagi untuk semua objek yang ada. Nilai pada atribut statis akan selalu tetap. Pembahasan lebih lanjut di materi tentang object oriented.
+=end
+
+class Coba 
+  # Mendefinisikan atribut statis
+  @@atribut_statis = 0
+
+  # Setiap kali class ini di instansiasi, atribut_statis nya akan selalu bertambah satu
+  def initialize()
+    return @@atribut_statis += 1
+  end
+
+  def cetak_atribut_statis()
+    return @@atribut_statis
+  end
+end
+
+objek1 = Coba.new()
+puts objek1.cetak_atribut_statis()
+objek2 = Coba.new()
+puts objek2.cetak_atribut_statis()
+
+# Memastikan bahwa atribut statis memiliki nilai yang tetap
+puts "Nilai atribut statis pada objek1 dan objek2 : "
+puts "objek1: #{objek1.cetak_atribut_statis()}"
+puts "objek2: #{objek2.cetak_atribut_statis()}"
