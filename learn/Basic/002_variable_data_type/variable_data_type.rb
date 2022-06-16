@@ -151,3 +151,16 @@ puts objek2.cetak_atribut_statis()
 puts "Nilai atribut statis pada objek1 dan objek2 : "
 puts "objek1: #{objek1.cetak_atribut_statis()}"
 puts "objek2: #{objek2.cetak_atribut_statis()}"
+
+=begin 
+  ! Konstanta
+
+  Konstanta merupakan suatu variabel yang dimana nilai atau isi dari variabel tersebut tidak bisa diubah sama sekali. Dalam ruby, variabel yang ditulis dengan huruf kapital akan menjadi konstanta yang nilai dari konstanta tersebut tidak dapat diubah. Jika kita memaksa untuk mengubah nilai dari konstanta tersebut, maka ruby akan menampilkan pesan peringatan.
+=end
+
+# contoh mendefinisikan konstanta
+PI = 3.14
+puts PI
+
+# mencoba mengisi ulang nilai / menunjuk ke objek lain dari konstanta PI
+PI = 0 # already initialized constant PI
