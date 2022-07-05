@@ -10,6 +10,8 @@ teks = 'Aku ini string'
 number1 = 1 # integer
 number2 = 4.5 # float
 
+puts "=" * 100
+
 =begin 
   Jenis jenis variabel pada Ruby:
   1. Variabel global
@@ -84,6 +86,8 @@ end
 
 puts angkaMutlak
 
+puts "=" * 100
+
 =begin 
   ! Instance Variable / Variabel milik objek
   
@@ -122,6 +126,8 @@ segitiga1 = Segitiga.new(2, 4)
 segitiga1.cetakInstanceVariable()
 segitiga1.cetakLuas()
 
+puts "=" * 100
+
 =begin 
   ! Class Variable / Variable milik class
 
@@ -152,6 +158,8 @@ puts "Nilai atribut statis pada objek1 dan objek2 : "
 puts "objek1: #{objek1.cetak_atribut_statis()}"
 puts "objek2: #{objek2.cetak_atribut_statis()}"
 
+puts "=" * 100
+
 =begin 
   ! Konstanta
 
@@ -164,6 +172,8 @@ puts PI
 
 # mencoba mengisi ulang nilai / menunjuk ke objek lain dari konstanta PI
 PI = 0 # already initialized constant PI
+
+puts "=" * 100
 
 =begin 
   ! Interpolasi Variable
