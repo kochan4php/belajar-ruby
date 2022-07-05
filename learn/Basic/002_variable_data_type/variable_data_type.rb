@@ -164,3 +164,12 @@ puts PI
 
 # mencoba mengisi ulang nilai / menunjuk ke objek lain dari konstanta PI
 PI = 0 # already initialized constant PI
+
+=begin 
+  ! Interpolasi Variable
+
+  Interpolasi variable adalah proses mengakses nilai variable dari dalam string. Contoh penggunaannya seperti berikut: "Teks #{nama_variabel / operasi_matematika / method_yang_mengembalikan_nilai}"  
+=end
+
+name = 'Deo Subarno'
+puts "Halo nama saya #{name}"
