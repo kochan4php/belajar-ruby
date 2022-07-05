@@ -189,14 +189,21 @@ puts "=" * 100
 =begin 
   ! Tipe data Bilangan / Number
 
-  Ruby menyediakan lima class untuk menyatakan tipe data bilangan, yaitu: Integer, Float, BigDecimal, Complex dan Rational. Kelima class tersebut merupakan turunan dari class Numeric.
+  Ruby menyediakan lima class untuk menyatakan tipe data bilangan, yaitu: Integer, Float dan Rational. Ketiga class tersebut merupakan turunan dari class Numeric.
 
   1. Tipe Integer digunakan untuk menyatakan data bilangan bulat, seperti -1, 1, 2, 3 dan seterusnya.
   contoh: bilangan_bulat = 10
   Untuk bilangan bulat yang memiliki jumlah ribuan atau jutaan, kita bisa memberikan tanda underscore(_) untuk memudahkan kita membacanya.
   contoh: bilangan_bulat_ribuan = 100000 bisa dirubah menjadi bilangan_bulat_ribuan = 100_000
+
+  2. Tipe Float adalah bilangan yang mengandung angka dibelakang koma. Di Ruby, bilangan dengan tipe data Float ditulis menggunakan tanda titik, bukan tanda koma. 
+  contoh: bilangan_float = 10.5
+
+  3. Tipe Rational digunakan untuk menyatakan data bilangan pecahan yang terdiri dari pembilang dan penyebut. Seperti 1/4, 1/2, 3/4 dan sebagainya.
+  contoh: a = Rational(1, 3) #=> 1/3
 =end
 
 bilangan_bulat = 10
 bilangan_bulat_ribuan = 100_000
-puts bilangan_bulat, bilangan_bulat_ribuan
+bilangan_pecahan = Rational(1, 3)
+puts bilangan_bulat, bilangan_bulat_ribuan, bilangan_pecahan
