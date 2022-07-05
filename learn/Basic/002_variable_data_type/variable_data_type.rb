@@ -207,3 +207,66 @@ bilangan_bulat = 10
 bilangan_bulat_ribuan = 100_000
 bilangan_pecahan = Rational(1, 3)
 puts bilangan_bulat, bilangan_bulat_ribuan, bilangan_pecahan
+
+puts "=" * 100
+
+=begin 
+  ! Tipe data String
+
+  Tipe data string merupakan kumpulan dari beberapa karakter. String dapat dibentuk menggunakan 4 cara yaitu: 
+
+  1. Menggunakan tanda petik satu ('')
+  contoh: kalimat_satu = 'string dengan petik satu'
+
+  2. Menggunakan tanda petik dua ("")
+  contoh: kalimat_dua = "string dengan petik dua"
+
+  3. Menggunakan pengapit bertanda khusus (disebut general delimited string). String jenis ini diawali dengan tanda % dan karakter tertentu
+  contoh: {
+    # Menggunakan tanda [ dan ]
+    kalimat_tiga = %[contoh pertama general delimited string]
+
+    # Menggunakan tanda ( dan )
+    kalimat_empat = %(contoh kedua general delimited string)
+  }
+
+  4. Menggunakan here doc. String jenis ini biasanya digunakan untuk membuat string yang terdiri dari banyak baris.
+  contoh: {
+    kalimat_lima = <<EOF
+      string yang dibuat
+      menggunakan here doc
+    EOF
+  }
+
+  String yang dibuat menggunakan tanda petik satu tidak mendukung karakter escape sequence dan interpolasi variabel.
+
+  Dalam Ruby, setiap karakter penyusun string dapat diindeks dari dua arah, yaitu dari kiri dan kanan. Jika string diindeks dari arah kiri, maka indeks awal selalu dimulai dari 0, kemudian dilanjutkan dengan 1, 2, 3 dan seterusnya. Jika string diindeks dari arah kanan, maka indeks awalnya selalu dimulai dari -1, kemudian dilanjutkan dengan -2, -3, -4 dan seterusnya.
+  contoh: {
+    kalimat = "Ruby"
+
+    # diindeks dari kiri
+    kalimat[0] #=> "R"
+    kalimat[1] #=> "u"
+    kalimat[2] #=> "b"
+    kalimat[3] #=> "y"
+
+    # diindeks dari kanan
+    kalimat[-1] #=> "y"
+    kalimat[-2] #=> "b"
+    kalimat[-3] #=> "u"
+    kalimat[-4] #=> "R"
+  }
+=end
+
+kalimat_satu = 'string dengan petik satu'
+kalimat_dua = "string dengan petik dua"
+kalimat_tiga = %[contoh pertama general delimited string]
+kalimat_empat = %(contoh kedua general delimited string)
+kalimat_lima = <<EOF
+  string yang dibuat
+  menggunakan here doc
+EOF
+kalimat = "Ruby"
+puts kalimat_satu, kalimat_dua, kalimat_tiga, kalimat_empat, kalimat_lima
+puts kalimat[0], kalimat[1], kalimat[2], kalimat[3]
+puts kalimat[-1], kalimat[-2], kalimat[-3], kalimat[-4]
