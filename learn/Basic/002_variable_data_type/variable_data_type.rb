@@ -173,3 +173,20 @@ PI = 0 # already initialized constant PI
 
 name = 'Deo Subarno'
 puts "Halo nama saya #{name}"
+
+puts "=" * 100
+
+=begin 
+  ! Tipe data Bilangan / Number
+
+  Ruby menyediakan lima class untuk menyatakan tipe data bilangan, yaitu: Integer, Float, BigDecimal, Complex dan Rational. Kelima class tersebut merupakan turunan dari class Numeric.
+
+  1. Tipe Integer digunakan untuk menyatakan data bilangan bulat, seperti -1, 1, 2, 3 dan seterusnya.
+  contoh: bilangan_bulat = 10
+  Untuk bilangan bulat yang memiliki jumlah ribuan atau jutaan, kita bisa memberikan tanda underscore(_) untuk memudahkan kita membacanya.
+  contoh: bilangan_bulat_ribuan = 100000 bisa dirubah menjadi bilangan_bulat_ribuan = 100_000
+=end
+
+bilangan_bulat = 10
+bilangan_bulat_ribuan = 100_000
+puts bilangan_bulat, bilangan_bulat_ribuan
