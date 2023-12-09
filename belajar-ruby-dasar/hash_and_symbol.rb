@@ -26,4 +26,13 @@ data_diri_2 = {
 
 puts data_diri_2[:age] # mengakses elemen dengan index :age
 
+# contoh lain dari hash menggunakan key bertipe Symbol yang merupakan cara yang lebih singkat
+data_diri_3 = {
+    name: 'Andi Gusma',
+    age: 18,
+    hobby: 'Sunmori',
+}
+
+puts data_diri_3[:hobby]
+
 # ! Penggunaan Symbol sebagai index dari Hash lebih disarankan dibanding menggunakan String. Karena selain menghemat waktu saat melakukan perbandingan, penggunaan Symbol juga dapat menghemat penggunaan memory, karena hanya disimpan satu kali.
