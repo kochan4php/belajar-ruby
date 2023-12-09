@@ -1,12 +1,12 @@
 # ! Operator assignment adalah operator yang menugaskan suatu variable untuk menunjuk ke object tertentu sambil melakukan operasi matematika pada nilai variable tersebut.
 
 # ! Macam-macam operator assignment:
-# a -= b => a = a - b
-# a += b => a = a + b
-# a *= b => a = a * b
-# a /= b => a = a / b
-# a %= b => a = a % b
-# a **= b => a = a ** b
+#* (a -= b) => (a = a - b)
+#* (a += b) => (a = a + b)
+#* (a *= b) => (a = a * b)
+#* (a /= b) => (a = a / b)
+#* (a %= b) => (a = a % b)
+#* (a **= b) => (a = a ** b)
 
 # contoh
 a = 8
