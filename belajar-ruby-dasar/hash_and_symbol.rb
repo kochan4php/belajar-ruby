@@ -35,4 +35,24 @@ data_diri_3 = {
 
 puts data_diri_3[:hobby]
 
+# ! Sama seperti array, hash juga dapat diisi dengan elemen bertipe hash (nested hash).
+
+# contoh nested hash
+cars = {
+    bmw: {
+        years: 2012,
+        color: 'black'
+    },
+    mercedes: {
+        years: 2011,
+        color: 'white'
+    },
+    lamborghini: {
+        years: 2009,
+        color: 'silver'
+    }
+}
+
+puts cars[:lamborghini][:color] # silver
+
 # ! Penggunaan Symbol sebagai index dari Hash lebih disarankan dibanding menggunakan String. Karena selain menghemat waktu saat melakukan perbandingan, penggunaan Symbol juga dapat menghemat penggunaan memory, karena hanya disimpan satu kali.
