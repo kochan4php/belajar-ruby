@@ -1,4 +1,4 @@
-# Resource and Cheat sheet for learning Ruby and Ruby on Rails
+## Resource and Cheat sheet for learning Ruby and Ruby on Rails
 
 | Title                           | Host                       | Link                                                                                                                                            |
 | ------------------------------- | -------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
