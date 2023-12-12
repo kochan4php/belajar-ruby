@@ -54,3 +54,29 @@ def echo(text, newline = true)
 end
 echo("Parameter opsional tidak diisi")
 echo("Parameter opsional diisi", false)
+
+# * Memanggil function dengan urutan argumen yang berbeda dengan urutan parameter nya.
+
+# ! Normalnya ketika function yang memiliki parameter dipanggil, maka kita perlu menyertakan argumen sesuai dengan urutan parameter yang didefinisikan pada function.
+# ! Ruby mendukung pemanggilan function dengan urutan argumen yang berbeda dengan urutan parameter, asalkan nama parameter dan nilainya disebutkan.
+# ! Untuk membuat function seperti itu, kiita perlu menggunakan tanda titik dua (:) di belakang nama parameter, seperti berikut:
+=begin 
+    def nama_function(a:, b:, c:)
+        # action
+        # return value
+    end
+=end
+# ! Dengan cara ini, kita dapat mengubah urutan nilai untuk a, b dan c (tidak harus sesuai dengan urutan sebenarnya).
+# ! Cara pemanggilan function dengan nilai argumen yang tidak harus sesuai urutan adalah sebagai berikut:
+=begin 
+    nama_function(c: value, a: value, b: value)
+=end
+
+# contoh program
+puts
+puts "=" * 80
+
+def data_diri(name:, age:, hobby:)
+    puts "Hello my name is #{name}. I'm #{age} years old and i love #{hobby}"
+end
+data_diri(hobby: "Coding", name: "Deo Subarno", age: 18)
