@@ -149,6 +149,8 @@ puts sum(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
     end
 =end
 # ! Operator lambda juga dapat diisi dengan parameter non default (menggunakan tanda bintang didepan nama parameter).
+# ! Untuk memanggil function yang merupakan operator lambda, adalah sebagai berikut:
+# nama_lambda.call(argumen)
 
 puts "=" * 80
 
