@@ -3,7 +3,7 @@
 # ! Function dibedakan menjadi 2, yaitu: function dengan return value dan function tanpa return value (void).
 # ! Di Ruby, function didefinisikan dengan menggunakan keyword def dengan bentuk umum seperti berikut:
 =begin 
-    def nama_function(parameter1, parameter2)
+    def nama_function()
         # action
         # return value
     end
@@ -147,6 +147,16 @@ puts sum(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
     variable = -> (argumen1, argumen2, argumen3, ...) do
         action
     end
+
+    # cara kelima tanpa parameter
+    variable = lambda { action }
+    variable = lambda do
+        action
+    end
+    variable = -> { action }
+    variable = -> do
+        action
+    end
 =end
 # ! Operator lambda juga dapat diisi dengan parameter non default (menggunakan tanda bintang didepan nama parameter).
 # ! Untuk memanggil function yang merupakan operator lambda, adalah sebagai berikut:
@@ -223,4 +233,4 @@ end
 puts "Hasil penjumlahan 10 + 20 adalah #{sum(10, 20)}"
 
 undef sum
-puts "Hasil penjumlahan 10 + 20 adalah #{sum(10, 20)}" # undefined method `sum' for main:Object (NoMethodError)
+# puts "Hasil penjumlahan 10 + 20 adalah #{sum(10, 20)}" # undefined method `sum' for main:Object (NoMethodError)
