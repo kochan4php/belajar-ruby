@@ -184,6 +184,10 @@ kubik = -> (number) do
 end
 puts kubik.call(3) # 27
 
+# contoh kode sederhana part 5
+hello_world = -> { "hello world" }
+puts hello_world.call()
+
 # * Mendefinisikan function didalam function
 # ! Ruby mengizinkan untuk mendefinisikan funciton didalam function lain
 
@@ -233,4 +237,4 @@ end
 puts "Hasil penjumlahan 10 + 20 adalah #{sum(10, 20)}"
 
 undef sum
-# puts "Hasil penjumlahan 10 + 20 adalah #{sum(10, 20)}" # undefined method `sum' for main:Object (NoMethodError)
+# puts "Hasil penjumlahan 10 + 20 adalah #{sum(10, 20)}" # undefined method `sum' for main:Object (NoMethodError)           
