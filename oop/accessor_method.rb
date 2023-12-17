@@ -25,7 +25,8 @@ class Segitiga
   @tinggi = 0
 
   # mendefinisikan accessor method
-  attr_accessor :alas, :tinggi
+  # attr_accessor :alas, :tinggi
+  attr_accessor(:alas, :tinggi)
 
   def luas
     @alas * @tinggi / 2
