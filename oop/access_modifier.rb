@@ -48,6 +48,7 @@ class PersegiPanjang
 end
 
 if $0 == __FILE__
-    obj = PersegiPanjang.new(10, 5)
+    obj = PersegiPanjang.new(20, 15)
     puts obj.print_luas()
+    # puts obj.luas() # error karena mencoba mengakses method dengan access modifier private
 end
