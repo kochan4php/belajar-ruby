@@ -62,3 +62,5 @@ if $PROGRAM_NAME == __FILE__
   obj = Segitiga.new(50, 30)
   puts "Luas segitiga dengan alas 50 dan tinggi 30 adalah #{obj.luas}"
 end
+
+# ! Jika kamu berfikir bahwa 'apa gunanya membuat module dan memanggilnya menggunakan method include() didalam file yang sama?', problem ini akan kita bahas dimateri tentang method require() dan method require_relative()
