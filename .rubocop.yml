@@ -1,0 +1,11 @@
+Style/Documentation:
+  Enabled: false
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Style/ColonMethodCall:
+  Enabled: false
+
+Layout/LineLength:
+  Enabled: false
