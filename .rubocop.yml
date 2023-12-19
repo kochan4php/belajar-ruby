@@ -12,3 +12,6 @@ Layout/LineLength:
 
 Style/MixinUsage:
   Enabled: false
+
+Style/StringConcatenation:
+  Enabled: false
