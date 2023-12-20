@@ -10,7 +10,7 @@
 # ! Method attr_writer digunakan untuk membuat method mutator secara otomatis dan tidak akan membuat method accessor.
 # ! Accessor method ini harus didefinisikan didalam class, dan diluar dari method class.
 # ! contoh penulisa accessor method adalah sebagai berikut:
-=begin 
+=begin
   class NamaClass
     attr_accessor :nama_attribute_1, :nama_attribute_2, ...
     attr_writer :nama_attribute_1, :nama_attribute_2, ...

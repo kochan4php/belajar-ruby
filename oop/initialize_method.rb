@@ -7,17 +7,17 @@
 
 # contoh kode program
 class Segitiga
-    # membuat method initialize
-    def initialize(alas, tinggi)
-        @alas = alas
-        @tinggi = tinggi
-    end
+  # membuat method initialize
+  def initialize(alas, tinggi)
+    @alas = alas
+    @tinggi = tinggi
+  end
 
-    def luas()
-        @alas * @tinggi / 2
-    end
+  def luas
+    @alas * @tinggi / 2
+  end
 end
 
 # membuat object baru
 obj = Segitiga.new(5, 6) # mengirim argumen untuk menginisialisasi atribute yang ada di class Segitiga
-puts "Luas segitiga: #{obj.luas()}"
+puts "Luas segitiga: #{obj.luas}"

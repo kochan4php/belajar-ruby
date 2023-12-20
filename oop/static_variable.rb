@@ -6,22 +6,22 @@
 
 # contoh kode program
 class Segitiga
-    # mendefinisikan static variable / class variable
-    @@jumlah_instance = 0
-    
-    def initialize(alas, tinggi)
-        @alas = alas
-        @tinggi = tinggi
+  # mendefinisikan static variable / class variable
+  @@jumlah_instance = 0
 
-        # melakukan suatu expression terhadap static variable
-        @@jumlah_instance += 1
-    end
+  def initialize(alas, tinggi)
+    @alas = alas
+    @tinggi = tinggi
 
-    # membuat static method untuk mengakses static variable, karena variable / attribute apapun yang berada didalam class tidak bisa diakses dari luar class
-    # static method akan dipelajari di materi selanjutnya
-    def self.get_jumlah_instance()
-        @@jumlah_instance
-    end
+    # melakukan suatu expression terhadap static variable
+    @@jumlah_instance += 1
+  end
+
+  # membuat static method untuk mengakses static variable, karena variable / attribute apapun yang berada didalam class tidak bisa diakses dari luar class
+  # static method akan dipelajari di materi selanjutnya
+  def self.get_jumlah_instance
+    @@jumlah_instance
+  end
 end
 
 # menginstansiasi class menjadi object
@@ -31,4 +31,4 @@ obj3 = Segitiga.new(17, 3)
 obj4 = Segitiga.new(7, 13)
 
 # mendapatkan nilai dari static variable @@jumlah_instance dengan cara mengakses static method
-puts "Jumlah object hasil instansiasi dari class Segitiga adalah #{Segitiga::get_jumlah_instance()}"
+puts "Jumlah object hasil instansiasi dari class Segitiga adalah #{Segitiga::get_jumlah_instance}"

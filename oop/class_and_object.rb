@@ -2,7 +2,7 @@
 # ! Dalam Ruby, semua nilai yang digunakan oleh program merupakan object (mirip seperti javascript), seperti 9 (object dari class Integer), 'text' (object dari class String), dan masih banyak lainnya.
 
 # untuk lebih jelasnya, perhatikan contoh berikut
-puts 9.class() # Integer
+puts 9.class # Integer
 
 # ! Pada kode diatas, menunjukkan bahwa 9 disebut sebagai object atau hasil instansiasi dari class Integer.
 # ! Dan Integer disebut sebagai class.

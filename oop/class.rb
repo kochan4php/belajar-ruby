@@ -2,7 +2,7 @@
 
 # ! Dalam Ruby, sebuah class didefinisikan dengan kata kunci atau keyword `class`.
 # ! Bentuk umumnya adalah sebagai berikut:
-=begin 
+=begin
     class ClassName
         # class body
     end
@@ -11,5 +11,5 @@
 
 # contoh kode program
 class PersegiPanjang
-    # class body
+  # class body
 end

@@ -15,3 +15,12 @@ Style/MixinUsage:
 
 Style/StringConcatenation:
   Enabled: false
+
+Style/BlockComments:
+  Enabled: false
+
+Style/TrivialAccessors:
+  Enabled: false
+
+Naming/AccessorMethodName:
+  Enabled: false

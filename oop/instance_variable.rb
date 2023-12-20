@@ -4,7 +4,7 @@
 
 # contoh kode program
 class Segitiga
-    # mendefinisikan atribute / instance variable
-    @alas = 0
-    @tinggi = 0
+  # mendefinisikan atribute / instance variable
+  @alas = 0
+  @tinggi = 0
 end

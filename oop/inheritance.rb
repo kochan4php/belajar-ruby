@@ -3,7 +3,7 @@
 # ! Class yang menerima / mewarisi sifat dan perilaku dari Parent Class disebut Child Class atau Sub Class.
 # ! Child Class juga dapat mendefinisikan sifat dan perilaku baru (attribute dan method baru) ke dalam Child Class tersebut.
 # ! Cara mendefinisikan Child Class adalah sebagai berikut:
-=begin 
+=begin
   class ChildClass < ParentClass
     # class body
   end

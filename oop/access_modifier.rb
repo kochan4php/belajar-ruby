@@ -16,39 +16,39 @@
 # ! Sedangkan untuk method initialize, method tersebut akan selalu bersifat private.
 
 # ! Bentuk umum menuliskan access modifier adalah sebagai berikut:
-=begin 
-    class ClassName
-        public
-        # list method yang bersifat public
+=begin
+  class ClassName
+    public
+    # list method yang bersifat public
 
-        private
-        # list method yang bersifat private
+    private
+    # list method yang bersifat private
 
-        protected
-        # list method yang bersifat protected
-    end
+    protected
+    # list method yang bersifat protected
+  end
 =end
 
 # contoh kode program
 class PersegiPanjang
-    def initialize(panjang, lebar)
-        @panjang = panjang
-        @lebar = lebar
-    end
+  def initialize(panjang, lebar)
+    @panjang = panjang
+    @lebar = lebar
+  end
 
-    public
-    def print_luas()
-        "Luas persegi panjang dengan panjangnya #{@panjang} dan lebarnya #{@lebar} adalah #{luas()}"
-    end
+  def print_luas
+    "Luas persegi panjang dengan panjangnya #{@panjang} dan lebarnya #{@lebar} adalah #{luas}"
+  end
 
-    private
-    def luas()
-        @panjang * @lebar
-    end
+  private
+
+  def luas
+    @panjang * @lebar
+  end
 end
 
-if $0 == __FILE__
-    obj = PersegiPanjang.new(20, 15)
-    puts obj.print_luas()
-    # puts obj.luas() # error karena mencoba mengakses method dengan access modifier private
+if $PROGRAM_NAME == __FILE__
+  obj = PersegiPanjang.new(20, 15)
+  puts obj.print_luas
+  # puts obj.luas() # error karena mencoba mengakses method dengan access modifier private
 end
