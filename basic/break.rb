@@ -3,18 +3,17 @@
 # contoh menggunakan while
 index = 0
 while index < 10
-    puts "Pengulangan ke-#{index}"
-    break if index == 4
-    index += 1
+  puts "Pengulangan ke-#{index}"
+  break if index == 4
+
+  index += 1
 end
 
-puts "=" * 30
+puts '=' * 30
 
 # contoh menggunakan for
 for item in 1...11
-    puts item
-    
-    if item == 3
-        break
-    end
+  puts item
+
+  break if item == 3
 end

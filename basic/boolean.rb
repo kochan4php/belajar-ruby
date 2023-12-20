@@ -8,5 +8,5 @@ salah = false
 puts benar
 puts salah
 
-puts benar.class()
-puts salah.class()
+puts benar.class
+puts salah.class
