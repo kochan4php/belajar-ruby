@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/index.css"/>
+    <title>Detail Product</title>
+  </head>
+  <body>
+    <div>
+      <p id="clock"></p>
+    </div>
+    <div>
+      <a href="/products/new">Add Product</a>
+    </div>
+    <div>
+      <a href="/products">Back</a>
+    </div>
+    <div class="header">
+      <img src="/images/ruby.png" alt="ruby" class="image">
+      <h1>Toko Barang Erafone</h1>
+      <img src="/images/ruby.png" alt="ruby" class="image">
+    </div>
+    <div class="card">
+      <h2>Detail Product</h2>
+      <div>
+        <% @product.each do |item| %>
+          <p>Product Name: <%= item['name'] %></p>
+          <p>Product Price: <%= item['price'] %></p>
+        <% end %>
+      </div>
+    </div>
+    <script src="js/index.js"></script>
+  </body>
+</html>
