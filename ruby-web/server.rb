@@ -1,10 +1,10 @@
 if $PROGRAM_NAME == __FILE__
   require 'sinatra'
-  require 'sinatra/reloader'
 
   require_relative 'routes/index'
+  require_relative 'config/session'
 
-  # set template engine
+  # set template engine folder
   set :views, 'views'
 
   # set static folder
