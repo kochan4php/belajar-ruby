@@ -1,26 +1,29 @@
 Style/Documentation:
-  Enabled: false
+    Enabled: false
 
 Style/FrozenStringLiteralComment:
-  Enabled: false
+    Enabled: false
 
 Style/ColonMethodCall:
-  Enabled: false
+    Enabled: false
 
 Layout/LineLength:
-  Enabled: false
+    Enabled: false
 
 Style/MixinUsage:
-  Enabled: false
+    Enabled: false
 
 Style/StringConcatenation:
-  Enabled: false
+    Enabled: false
 
 Style/BlockComments:
-  Enabled: false
+    Enabled: false
 
 Style/TrivialAccessors:
-  Enabled: false
+    Enabled: false
 
 Naming/AccessorMethodName:
-  Enabled: false
+    Enabled: false
+
+Metrics/MethodLength:
+    Enabled: false
