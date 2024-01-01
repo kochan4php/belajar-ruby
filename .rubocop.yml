@@ -27,3 +27,6 @@ Naming/AccessorMethodName:
 
 Metrics/MethodLength:
     Enabled: false
+
+Lint/UnreachableLoop:
+    Enabled: false
